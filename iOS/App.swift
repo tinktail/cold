@@ -6,7 +6,7 @@ import SwiftUI
     
     var body: some Scene {
         WindowGroup {
-            Circle()
+            Board()
                 .task {
 //                    cloud.ready.notify(queue: .main) {
 //                        cloud.pull.send()

@@ -10,6 +10,8 @@
 		CED5481A28534A3900DBC4F2 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED5481928534A3900DBC4F2 /* App.swift */; };
 		CED5481E28534A3900DBC4F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED5481D28534A3900DBC4F2 /* Assets.xcassets */; };
 		CED548272853518D00DBC4F2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED548262853518D00DBC4F2 /* Launch Screen.storyboard */; };
+		CED54829285351F900DBC4F2 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED54828285351F900DBC4F2 /* Board.swift */; };
+		CED5482B285355A600DBC4F2 /* Board.Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED5482A285355A600DBC4F2 /* Board.Control.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +20,8 @@
 		CED5481D28534A3900DBC4F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CED5482528534E9B00DBC4F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CED548262853518D00DBC4F2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "../../cold/iOS/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		CED54828285351F900DBC4F2 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Board.swift; path = ../../cold/iOS/Board.swift; sourceTree = "<group>"; };
+		CED5482A285355A600DBC4F2 /* Board.Control.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Board.Control.swift; path = ../../cold/iOS/Board.Control.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 				CED5482528534E9B00DBC4F2 /* Info.plist */,
 				CED548262853518D00DBC4F2 /* Launch Screen.storyboard */,
 				CED5481928534A3900DBC4F2 /* App.swift */,
+				CED5482A285355A600DBC4F2 /* Board.Control.swift */,
+				CED54828285351F900DBC4F2 /* Board.swift */,
 				CED5481D28534A3900DBC4F2 /* Assets.xcassets */,
 			);
 			path = iOS;
@@ -128,6 +134,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED5482B285355A600DBC4F2 /* Board.Control.swift in Sources */,
+				CED54829285351F900DBC4F2 /* Board.swift in Sources */,
 				CED5481A28534A3900DBC4F2 /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
