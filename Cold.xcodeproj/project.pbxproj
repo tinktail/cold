@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE8521A128538DF7005D0BCD /* Board.Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8521A028538DF7005D0BCD /* Board.Card.swift */; };
+		CE8521A32853A31D005D0BCD /* Cards.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8521A22853A31D005D0BCD /* Cards.xcassets */; };
 		CED5481A28534A3900DBC4F2 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED5481928534A3900DBC4F2 /* App.swift */; };
 		CED5481E28534A3900DBC4F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED5481D28534A3900DBC4F2 /* Assets.xcassets */; };
 		CED548272853518D00DBC4F2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED548262853518D00DBC4F2 /* Launch Screen.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE8521A028538DF7005D0BCD /* Board.Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.Card.swift; sourceTree = "<group>"; };
+		CE8521A22853A31D005D0BCD /* Cards.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Cards.xcassets; sourceTree = "<group>"; };
 		CED5481628534A3800DBC4F2 /* From the Cold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "From the Cold.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED5481928534A3900DBC4F2 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		CED5481D28534A3900DBC4F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,9 +61,11 @@
 				CED5482528534E9B00DBC4F2 /* Info.plist */,
 				CED548262853518D00DBC4F2 /* Launch Screen.storyboard */,
 				CED5481928534A3900DBC4F2 /* App.swift */,
+				CE8521A028538DF7005D0BCD /* Board.Card.swift */,
 				CED5482A285355A600DBC4F2 /* Board.Control.swift */,
 				CED54828285351F900DBC4F2 /* Board.swift */,
 				CED5481D28534A3900DBC4F2 /* Assets.xcassets */,
+				CE8521A22853A31D005D0BCD /* Cards.xcassets */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -123,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CED548272853518D00DBC4F2 /* Launch Screen.storyboard in Resources */,
+				CE8521A32853A31D005D0BCD /* Cards.xcassets in Resources */,
 				CED5481E28534A3900DBC4F2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +144,7 @@
 				CED5482B285355A600DBC4F2 /* Board.Control.swift in Sources */,
 				CED54829285351F900DBC4F2 /* Board.swift in Sources */,
 				CED5481A28534A3900DBC4F2 /* App.swift in Sources */,
+				CE8521A128538DF7005D0BCD /* Board.Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

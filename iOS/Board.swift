@@ -3,9 +3,7 @@ import SwiftUI
 struct Board: View {
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .fill(Color(.tertiarySystemBackground))
-                .padding()
+            Card()
         }
         .frame(maxWidth: .greatestFiniteMagnitude, maxHeight: .greatestFiniteMagnitude)
         .safeAreaInset(edge: .bottom, spacing: 0) {
