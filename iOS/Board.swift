@@ -2,8 +2,13 @@ import SwiftUI
 
 struct Board: View {
     var body: some View {
-        ZStack {
+        VStack(spacing: 0) {
             Card()
+            Text("Are you ready?")
+                .font(.callout)
+                .fixedSize(horizontal: false, vertical: true)
+                .frame(maxWidth: .greatestFiniteMagnitude, alignment: .leading)
+                .padding()
         }
         .frame(maxWidth: .greatestFiniteMagnitude, maxHeight: .greatestFiniteMagnitude)
         .safeAreaInset(edge: .bottom, spacing: 0) {

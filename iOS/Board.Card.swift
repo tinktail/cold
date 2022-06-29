@@ -6,25 +6,21 @@ extension Board {
             ZStack {
                 Rectangle()
                     .fill(Color(.tertiarySystemBackground))
-                VStack {
+                VStack(spacing: 0) {
                     Image("Card.Simely")
                     Spacer()
                 }
-                VStack {
+                VStack(spacing: 0) {
                     Spacer()
                     Text("Simely")
                         .font(.title3.bold())
                         .foregroundStyle(.tertiary)
                         .frame(maxWidth: .greatestFiniteMagnitude, alignment: .leading)
-                    Text("Are you ready?")
-                        .font(.callout)
-                        .fixedSize(horizontal: false, vertical: true)
-                        .frame(maxWidth: .greatestFiniteMagnitude, alignment: .leading)
                 }
                 .padding([.leading, .bottom])
             }
+            .frame(width: 320, height: 400)
             .mask(RoundedRectangle(cornerRadius: 18, style: .continuous))
-            .padding()
         }
     }
 }
