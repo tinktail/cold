@@ -1,13 +1,23 @@
 import SwiftUI
 
 @main struct App: SwiftUI.App {
-//    @Environment(\.scenePhase) private var phase
-//    @UIApplicationDelegateAdaptor(Delegate.self) private var delegate
+    @StateObject private var session = Session()
+    @Environment(\.scenePhase) private var phase
+    @UIApplicationDelegateAdaptor(Delegate.self) private var delegate
     
     var body: some Scene {
         WindowGroup {
-            Board()
-                .task {
+            Window(session: session)
+                .preferredColorScheme(.dark)
+//                .onReceive(cloud) { model in
+//                    session.walking = model.walking
+//                    
+//                    Task
+//                        .detached(priority: .utility) {
+//                            await session.update(chart: model.chart, tiles: model.tiles)
+//                        }
+//                }
+//                .task {
 //                    cloud.ready.notify(queue: .main) {
 //                        cloud.pull.send()
 //                        Defaults.start()
@@ -18,8 +28,8 @@ import SwiftUI
 //                                await store.launch()
 //                            }
 //                    }
-                }
-        }
+//                }
+            }
 //        .onChange(of: phase) {
 //            switch $0 {
 //            case .active:
@@ -27,6 +37,5 @@ import SwiftUI
 //            default:
 //                break
 //            }
-//        }
-    }
+        }
 }

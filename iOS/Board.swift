@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct Board: View {
+    @ObservedObject var session: Session
+    
     var body: some View {
         VStack(spacing: 0) {
             Card()
@@ -26,6 +28,5 @@ struct Board: View {
             }
             .padding(.bottom, 20)
         }
-        .preferredColorScheme(.dark)
     }
 }
