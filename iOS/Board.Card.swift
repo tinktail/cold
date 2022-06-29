@@ -16,6 +16,10 @@ extension Board {
                         .font(.title3.bold())
                         .foregroundStyle(.tertiary)
                         .frame(maxWidth: .greatestFiniteMagnitude, alignment: .leading)
+                    Text("Foreign Office")
+                        .font(.callout)
+                        .foregroundStyle(.secondary)
+                        .frame(maxWidth: .greatestFiniteMagnitude, alignment: .leading)
                 }
                 .padding([.leading, .bottom])
             }
