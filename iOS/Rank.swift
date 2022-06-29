@@ -1,0 +1,24 @@
+public enum Rank: UInt8 {
+    case
+    entry,
+    courier,
+    watcher,
+    desk,
+    junior,
+    beat,
+    operational,
+    senior,
+    leader,
+    head,
+    control,
+    sorter,
+    o,
+    doubleO,
+    tinker,
+    tailor,
+    soldier,
+    poor,
+    beggar,
+    spy,
+    pastMaster
+}

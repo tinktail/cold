@@ -16,6 +16,9 @@
 		CE82F69C286C96930068B20B /* Organisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82F69B286C96930068B20B /* Organisation.swift */; };
 		CE82F69E286C96E20068B20B /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82F69D286C96E20068B20B /* Country.swift */; };
 		CE82F6A0286C982B0068B20B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82F69F286C982B0068B20B /* Location.swift */; };
+		CE82F6A2286C98CA0068B20B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82F6A1286C98CA0068B20B /* Player.swift */; };
+		CE82F6A4286CA1F30068B20B /* Rank.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82F6A3286CA1F30068B20B /* Rank.swift */; };
+		CE82F6A6286CA4BE0068B20B /* Attention.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82F6A5286CA4BE0068B20B /* Attention.swift */; };
 		CE8521A128538DF7005D0BCD /* Board.Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8521A028538DF7005D0BCD /* Board.Card.swift */; };
 		CE8521A32853A31D005D0BCD /* Cards.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8521A22853A31D005D0BCD /* Cards.xcassets */; };
 		CED5481A28534A3900DBC4F2 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED5481928534A3900DBC4F2 /* App.swift */; };
@@ -35,6 +38,9 @@
 		CE82F69B286C96930068B20B /* Organisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organisation.swift; sourceTree = "<group>"; };
 		CE82F69D286C96E20068B20B /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		CE82F69F286C982B0068B20B /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		CE82F6A1286C98CA0068B20B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		CE82F6A3286CA1F30068B20B /* Rank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rank.swift; sourceTree = "<group>"; };
+		CE82F6A5286CA4BE0068B20B /* Attention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attention.swift; sourceTree = "<group>"; };
 		CE8521A028538DF7005D0BCD /* Board.Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.Card.swift; sourceTree = "<group>"; };
 		CE8521A22853A31D005D0BCD /* Cards.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Cards.xcassets; sourceTree = "<group>"; };
 		CED5481628534A3800DBC4F2 /* From the Cold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "From the Cold.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +85,7 @@
 				CED5482528534E9B00DBC4F2 /* Info.plist */,
 				CED548262853518D00DBC4F2 /* Launch Screen.storyboard */,
 				CED5481928534A3900DBC4F2 /* App.swift */,
+				CE82F6A5286CA4BE0068B20B /* Attention.swift */,
 				CE8521A028538DF7005D0BCD /* Board.Card.swift */,
 				CED5482A285355A600DBC4F2 /* Board.Control.swift */,
 				CED54828285351F900DBC4F2 /* Board.swift */,
@@ -91,6 +98,8 @@
 				CE82F69D286C96E20068B20B /* Country.swift */,
 				CE82F69F286C982B0068B20B /* Location.swift */,
 				CE82F69B286C96930068B20B /* Organisation.swift */,
+				CE82F6A1286C98CA0068B20B /* Player.swift */,
+				CE82F6A3286CA1F30068B20B /* Rank.swift */,
 				CED5481D28534A3900DBC4F2 /* Assets.xcassets */,
 				CE8521A22853A31D005D0BCD /* Cards.xcassets */,
 			);
@@ -168,9 +177,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE82F6A6286CA4BE0068B20B /* Attention.swift in Sources */,
 				CE82F694286C8BA40068B20B /* Card.Category.swift in Sources */,
 				CED5482B285355A600DBC4F2 /* Board.Control.swift in Sources */,
 				CE82F69A286C96220068B20B /* Card.Requirement.swift in Sources */,
+				CE82F6A4286CA1F30068B20B /* Rank.swift in Sources */,
 				CED54829285351F900DBC4F2 /* Board.swift in Sources */,
 				CE82F690286C8A8F0068B20B /* Card.swift in Sources */,
 				CE82F698286C8D010068B20B /* Card.Effect.swift in Sources */,
@@ -181,6 +192,7 @@
 				CE82F69E286C96E20068B20B /* Country.swift in Sources */,
 				CED5481A28534A3900DBC4F2 /* App.swift in Sources */,
 				CE8521A128538DF7005D0BCD /* Board.Card.swift in Sources */,
+				CE82F6A2286C98CA0068B20B /* Player.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

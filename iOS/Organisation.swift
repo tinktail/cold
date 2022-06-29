@@ -1,5 +1,6 @@
-public enum Organisation {
+public enum Organisation: UInt8 {
     case
+    none,
     foreignOffice,
     homeOffice
     

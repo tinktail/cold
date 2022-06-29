@@ -1,4 +1,4 @@
-public enum Location {
+public enum Location: UInt8 {
     case
     london
     

@@ -1,5 +1,5 @@
 extension Card {
-    public enum Category {
+    public enum Category: Hashable {
         case
         character(Character)
     }
