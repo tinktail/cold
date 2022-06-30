@@ -9,6 +9,9 @@ import SwiftUI
         WindowGroup {
             Window(session: session)
                 .preferredColorScheme(.dark)
+                .onAppear {
+                    session.player = .init()
+                }
 //                .onReceive(cloud) { model in
 //                    session.walking = model.walking
 //                    

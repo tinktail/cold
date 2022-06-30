@@ -5,12 +5,17 @@ struct Board: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            Card()
-            Text("Are you ready?")
-                .font(.callout)
-                .fixedSize(horizontal: false, vertical: true)
-                .frame(maxWidth: 290, alignment: .leading)
-                .padding()
+            if let player = session.player {
+                Top(player: player)
+                Card(item: session.cards[player.card])
+                Text(session.cards[player.card].message)
+                    .font(.callout)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .frame(maxWidth: 290, maxHeight: .greatestFiniteMagnitude,
+                           alignment: .topLeading)
+                    .padding([.top, .leading, .trailing])
+                    .edgesIgnoringSafeArea(.bottom)
+            }
         }
         .frame(maxWidth: .greatestFiniteMagnitude, maxHeight: .greatestFiniteMagnitude)
         .safeAreaInset(edge: .bottom, spacing: 0) {

@@ -2,6 +2,8 @@ import SwiftUI
 
 extension Board {
     struct Card: View {
+        let item: Cards.Item
+        
         var body: some View {
             ZStack {
                 Rectangle()

@@ -1,11 +1,15 @@
-public enum Location: UInt8 {
+public enum Location: UInt16 {
     case
-    london
+    blackFriarsBridge,
+    trafalgarSquare,
+    foyles
     
-    public var country: Country {
+    public var city: City {
         switch self {
-        case .london:
-            return .uk
+        case .blackFriarsBridge,
+                .trafalgarSquare,
+                .foyles:
+            return .london
         }
     }
 }
