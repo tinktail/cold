@@ -1,4 +1,5 @@
 import SwiftUI
+import Master
 
 extension Board {
     struct Top: View {

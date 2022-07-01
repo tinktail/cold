@@ -9,4 +9,8 @@ public struct Player {
     var attention = [Country : UInt8]()
     var accepted = Set<Cards.ID>()
     var rejected = Set<Cards.ID>()
+    
+    public init() {
+        
+    }
 }

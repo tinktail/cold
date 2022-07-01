@@ -3,6 +3,6 @@ import XCTest
 
 final class MasterTests: XCTestCase {
     func testExample() throws {
-        XCTAssertEqual(Master().text, "Hello, World!")
+        
     }
 }

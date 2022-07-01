@@ -1,4 +1,5 @@
 import SwiftUI
+import Master
 
 @main struct App: SwiftUI.App {
     @StateObject private var session = Session()
