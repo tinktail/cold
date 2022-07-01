@@ -12,6 +12,6 @@ import AppKit
     }
     
     func applicationDidFinishLaunching(_: Notification) {
-        // new window
+        Window().makeKeyAndOrderFront(nil)
     }
 }
