@@ -2,7 +2,9 @@ import AppKit
 import Combine
 
 final class Window: NSWindow {
+    private weak var content: NSVisualEffectView!
     private var subs = Set<AnyCancellable>()
+    private let session = Session()
     
     init() {
         super.init(contentRect: .init(x: 0,
@@ -24,16 +26,27 @@ final class Window: NSWindow {
         bar.layoutAttribute = .top
         addTitlebarAccessoryViewController(bar)
         
+        let sidebar = Sidebar(session: session)
+        contentView!.addSubview(sidebar)
+        
         let content = NSVisualEffectView()
+        content.translatesAutoresizingMaskIntoConstraints = false
         content.state = .active
         content.material = .menu
-        content.translatesAutoresizingMaskIntoConstraints = false
-        contentView = content
+        contentView!.addSubview(content)
+        self.content = content
+        
+        sidebar.topAnchor.constraint(equalTo: contentView!.topAnchor).isActive = true
+        sidebar.bottomAnchor.constraint(equalTo: contentView!.bottomAnchor).isActive = true
+        sidebar.leftAnchor.constraint(equalTo: contentView!.leftAnchor).isActive = true
+        
+        content.topAnchor.constraint(equalTo: contentView!.topAnchor).isActive = true
+        content.bottomAnchor.constraint(equalTo: contentView!.bottomAnchor).isActive = true
+        content.leftAnchor.constraint(equalTo: sidebar.rightAnchor).isActive = true
+        content.rightAnchor.constraint(equalTo: contentView!.rightAnchor).isActive = true
     }
     
     private func place(view: NSView) {
-        guard let content = contentView else { return }
-        
         content
             .subviews
             .forEach {
