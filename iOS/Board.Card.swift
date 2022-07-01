@@ -9,7 +9,7 @@ extension Board {
                 Rectangle()
                     .fill(Color(.tertiarySystemBackground))
                 VStack(spacing: 0) {
-                    Image("Card.Simely")
+                    Image("Card.character.simely")
                     Spacer()
                 }
                 VStack(spacing: 0) {
