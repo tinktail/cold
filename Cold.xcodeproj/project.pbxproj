@@ -15,6 +15,7 @@
 		CE8521A32853A31D005D0BCD /* Cards.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8521A22853A31D005D0BCD /* Cards.xcassets */; };
 		CEA06AF6286DF19A00D1B595 /* Board.Top.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA06AF5286DF19A00D1B595 /* Board.Top.swift */; };
 		CEC38069286F392C007021E8 /* Master in Frameworks */ = {isa = PBXBuildFile; productRef = CEC38068286F392C007021E8 /* Master */; };
+		CEC38071286F3B53007021E8 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC38070286F3B53007021E8 /* App.swift */; };
 		CED5481A28534A3900DBC4F2 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED5481928534A3900DBC4F2 /* App.swift */; };
 		CED5481E28534A3900DBC4F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED5481D28534A3900DBC4F2 /* Assets.xcassets */; };
 		CED548272853518D00DBC4F2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED548262853518D00DBC4F2 /* Launch Screen.storyboard */; };
@@ -31,6 +32,8 @@
 		CE8521A22853A31D005D0BCD /* Cards.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Cards.xcassets; sourceTree = "<group>"; };
 		CEA06AF5286DF19A00D1B595 /* Board.Top.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.Top.swift; sourceTree = "<group>"; };
 		CEC38061286F3632007021E8 /* Master */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Master; sourceTree = "<group>"; };
+		CEC3806E286F3B53007021E8 /* Tailor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tailor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC38070286F3B53007021E8 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		CED5481628534A3800DBC4F2 /* From the Cold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "From the Cold.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED5481928534A3900DBC4F2 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		CED5481D28534A3900DBC4F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,6 +44,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CEC3806B286F3B53007021E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CED5481328534A3800DBC4F2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,9 +66,10 @@
 			isa = PBXGroup;
 			children = (
 				CEC38061286F3632007021E8 /* Master */,
+				CEC38067286F392C007021E8 /* Frameworks */,
 				CED5481828534A3900DBC4F2 /* iOS */,
 				CED5481728534A3800DBC4F2 /* Products */,
-				CEC38067286F392C007021E8 /* Frameworks */,
+				CEC3806F286F3B53007021E8 /* Tailor */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,10 +80,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CEC3806F286F3B53007021E8 /* Tailor */ = {
+			isa = PBXGroup;
+			children = (
+				CEC38070286F3B53007021E8 /* App.swift */,
+			);
+			path = Tailor;
+			sourceTree = "<group>";
+		};
 		CED5481728534A3800DBC4F2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				CED5481628534A3800DBC4F2 /* From the Cold.app */,
+				CEC3806E286F3B53007021E8 /* Tailor.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +120,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CEC3806D286F3B53007021E8 /* Tailor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEC3807A286F3B54007021E8 /* Build configuration list for PBXNativeTarget "Tailor" */;
+			buildPhases = (
+				CEC3806A286F3B53007021E8 /* Sources */,
+				CEC3806B286F3B53007021E8 /* Frameworks */,
+				CEC3806C286F3B53007021E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tailor;
+			productName = Tailor;
+			productReference = CEC3806E286F3B53007021E8 /* Tailor.app */;
+			productType = "com.apple.product-type.application";
+		};
 		CED5481528534A3800DBC4F2 /* iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CED5482428534A3900DBC4F2 /* Build configuration list for PBXNativeTarget "iOS" */;
@@ -130,6 +167,9 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					CEC3806D286F3B53007021E8 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
 					CED5481528534A3800DBC4F2 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -149,11 +189,19 @@
 			projectRoot = "";
 			targets = (
 				CED5481528534A3800DBC4F2 /* iOS */,
+				CEC3806D286F3B53007021E8 /* Tailor */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CEC3806C286F3B53007021E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CED5481428534A3800DBC4F2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -167,6 +215,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CEC3806A286F3B53007021E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC38071286F3B53007021E8 /* App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CED5481228534A3800DBC4F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -227,6 +283,143 @@
 				SWIFT_VERSION = 5.0;
 				TVOS_DEPLOYMENT_TARGET = 15.0;
 				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		CEC3807B286F3B54007021E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 7AMWG3RLHN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "2022 Cold";
+				INFOPLIST_KEY_NSPrincipalClass = Tailor.App;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = cold.Tailor;
+				PRODUCT_MODULE_NAME = Tailor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		CEC3807C286F3B54007021E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 7AMWG3RLHN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "2022 Cold";
+				INFOPLIST_KEY_NSPrincipalClass = Tailor.App;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = cold.Tailor;
+				PRODUCT_MODULE_NAME = Tailor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Release;
 		};
@@ -388,6 +581,15 @@
 			buildConfigurations = (
 				CE693FB428534A0700502B84 /* Debug */,
 				CE693FB528534A0700502B84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEC3807A286F3B54007021E8 /* Build configuration list for PBXNativeTarget "Tailor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC3807B286F3B54007021E8 /* Debug */,
+				CEC3807C286F3B54007021E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
