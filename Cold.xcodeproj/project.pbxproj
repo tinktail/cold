@@ -57,6 +57,7 @@
 		CEA06AF3286DEEC700D1B595 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		CEA06AF5286DF19A00D1B595 /* Board.Top.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.Top.swift; sourceTree = "<group>"; };
 		CEA06AF7286DF7F100D1B595 /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
+		CEC38061286F3632007021E8 /* Master */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Master; sourceTree = "<group>"; };
 		CED5481628534A3800DBC4F2 /* From the Cold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "From the Cold.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED5481928534A3900DBC4F2 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		CED5481D28534A3900DBC4F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,6 +81,7 @@
 		CE693FAF28534A0700502B84 = {
 			isa = PBXGroup;
 			children = (
+				CEC38061286F3632007021E8 /* Master */,
 				CED5481828534A3900DBC4F2 /* iOS */,
 				CED5481728534A3800DBC4F2 /* Products */,
 			);
